@@ -84,7 +84,7 @@ class neutron::agents::dhcp (
   $dhcp_driver              = 'neutron.agent.linux.dhcp.Dnsmasq',
   $root_helper              = 'sudo neutron-rootwrap /etc/neutron/rootwrap.conf',
   $dnsmasq_config_file      = $::os_service_default,
-  $dhcp_delete_namespaces   = true,
+  $dhcp_delete_namespaces   = false,
   $enable_isolated_metadata = false,
   $enable_metadata_network  = false,
   $dhcp_broadcast_reply     = false,
